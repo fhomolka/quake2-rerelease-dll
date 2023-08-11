@@ -97,6 +97,7 @@ file(GLOB GAME_SRC
     xatrix/m_xatrix_gekk.cpp 
     xatrix/p_xatrix_weapon.cpp )
 
+add_definitions(-DKEX_Q2_GAME -DKEX_Q2GAME_EXPORTS -DNO_FMT_SOURCE -DKEX_Q2GAME_DYNAMIC)
 add_library(game SHARED ${GAME_SRC})
 set_target_properties(game PROPERTIES PREFIX "")
 set_target_properties(game PROPERTIES OUTPUT_NAME "game")
